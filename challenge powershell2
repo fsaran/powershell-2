@@ -1,0 +1,87 @@
+Fichier historique.txt
+PS C:\> Get-Content C:\Users\fofan\historique.txt
+
+  Id CommandLine                                                                                                     
+  -- -----------                                                                                                     
+   1 show-command                                                                                                    
+   2 Get-Location                                                                                                    
+   3 Get-Host                                                                                                        
+   4 Set-Location -Path c:\                                                                                          
+   5 Get-Location                                                                                                    
+   6 New-Item -Path Temp -ItemType Directory                                                                         
+   7 Set-Location Temp                                                                                               
+   8 New-Item -Path Rep1 Temp -ItemType Directory                                                                    
+   9 New-Item -Path Rep1 -ItemType Directory                                                                         
+  10 New-Item -Path Rep2 -ItemType Directory                                                                         
+  11 Get-ChildItem                                                                                                   
+  12 New-Item -Path File1 -ItemType File                                                                             
+  13 New-Item -Path File2 -ItemType File                                                                             
+  14 New-Item -Path File3 -ItemType File                                                                             
+  15 Get-ChildItem                                                                                                   
+  16 Move-Item -Path File1 -Destination Rep1                                                                         
+  17 Get-ChildItem                                                                                                   
+  18 Get-ChildItem -Path Rep1                                                                                        
+  19 Get-ChildItem -Recurse                                                                                          
+  20 Move-Item -Path Rep1 -Destination Rep2                                                                          
+  21 Get-ChildItem -Recurse                                                                                          
+  22 Remove-Item -Path File3                                                                                         
+  23 Set-Location -Path C:\...                                                                                       
+  24 New-Item -Path C:\EvenFolder -ItemType Directory                                                                
+  25 New-Item -Path C:\OddFolder -ItemType Directory                                                                 
+  26 Move-Item -Path C:\FolderTest1 -Destination C:\EvenFolder -Name File2                                           
+  27 Move-Item -Path C:\FolderTest1 -Name File2 -Destination C:\EvenFolder                                           
+  28 Get-help Move-Item                                                                                              
+  29 Move-Item -Path C:\FolderTest1 -Destination C:\EvenFolder File2                                                 
+  30 Move-Item -Path C:\FolderTest1\File2 -Destination C:\EvenFolder                                                 
+  31 Move-Item -Path C:\FolderTest1\File4 -Destination C:\EvenFolder                                                 
+  32 Move-Item -Path C:\FolderTest1\File6 -Destination C:\EvenFolder                                                 
+  33 Move-Item -Path C:\FolderTest2\File6 -Destination C:\EvenFolder                                                 
+  34 Move-Item -Path C:\FolderTest2\File8 -Destination C:\EvenFolder                                                 
+  35 Move-Item -Path C:\FolderTest2\File10 -Destination C:\EvenFolder                                                
+  36 Move-Item -Path C:\FolderTest1\File1 -Destination C:\OddFolder                                                  
+  37 Move-Item -Path C:\FolderTest1\File3 -Destination C:\OddFolder                                                  
+  38 Move-Item -Path C:\FolderTest1\File5 -Destination C:\OddFolder                                                  
+  39 Move-Item -Path C:\FolderTest2\File7 -Destination C:\OddFolder                                                  
+  40 Move-Item -Path C:\FolderTest2\File9 -Destination C:\OddFolder                                                  
+  41 New-Item -Path C:\historique.txt -ItemType File                                                                 
+  42 New-Item -Path C:\ -ItemType File -Name historique.txt                                                          
+  43 Get-Location Historique.txt                                                                                     
+  44 Get-Location historique.txt                                                                                     
+  45 New-Item -Path C:\Users\fofan -ItemType File -Name historique.txt                                               
+  46 New-Item -Path C:\Users\fofan -ItemType File -Name listing.txt                                                  
+  47 Get-History > historique.txt                                                                                    
+  48 Get-History > -Path C:\Users\fofan historique.txt                                                               
+  49 Get-History > C:\Users\fofan historique.txt                                                                     
+  50 Get-History > -Path C:\Users\fofan\historique.txt                                                               
+
+
+Fichier Listing.txt
+PS C:\> Get-Content C:\Users\fofan\listing.txt
+
+
+    Directory: C:\EvenFolder
+
+
+Mode                 LastWriteTime         Length Name                                                               
+----                 -------------         ------ ----                                                               
+-a----         5/23/2022  12:28 AM              0 File10                                                             
+-a----         5/23/2022  12:28 AM              0 File2                                                              
+-a----         5/23/2022  12:28 AM              0 File4                                                              
+-a----         5/23/2022  12:28 AM              0 File6                                                              
+-a----         5/23/2022  12:28 AM              0 File8                                                              
+
+
+    Directory: C:\OddFolder
+
+
+Mode                 LastWriteTime         Length Name                                                               
+----                 -------------         ------ ----                                                               
+-a----         5/23/2022  12:28 AM              0 File1                                                              
+-a----         5/23/2022  12:28 AM              0 File3                                                              
+-a----         5/23/2022  12:28 AM              0 File5                                                              
+-a----         5/23/2022  12:28 AM              0 File7                                                              
+-a----         5/23/2022  12:28 AM              0 File9                                                              
+
+
+
+PS C:\> 
